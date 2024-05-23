@@ -6,6 +6,7 @@ import field from '../assets/field.png'
 import ilam from '../assets/ilam.jpg'
 import morang from '../assets/morang.jpg'
 import '../CSS/body.css'
+import { Link } from 'react-router-dom'
 const Project = () => {
   return (
     <>
@@ -23,7 +24,7 @@ const Project = () => {
           <div className='grid grid-cols-2'>
             <div className='flex flex-col justify-center items-center p-8 shadow-md shadow-gray-400 bg-gray-100 m-3 rouded-md overflow-hidden cursor-pointer'>
               <img className='h-24  hover:scale-125 duration-500 ease-in-out' src={fruits} alt="fruits" />
-              <a href="/project-detail"></a>
+              <Link to="/project-detail"></Link>
               <h1 className=' text-center text-xl font-extrabold text-green-600 mt-2'>Fresh Fruits</h1>
             </div>
             <div className='flex flex-col justify-center items-center p-8 shadow-md shadow-gray-400 bg-gray-100 m-3 rouded-md overflow-hidden cursor-pointer'>
@@ -50,7 +51,7 @@ const Project = () => {
         <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 p-9 justify-center items-center'>
           <div className="max-w-sm  cursor-pointer rounded overflow-hidden shadow-lg m-4 sm:items-center">
             <div className="relative group">
-              <a href="/project-detail">
+              <Link to="/project-detail">
                 <img
                   className=" object-cover transition duration-500 transform group-hover:scale-125"
                   src={morang}
@@ -61,12 +62,12 @@ const Project = () => {
                   <h1 className='text-white font-extrabold text-2xl'>Ilam</h1>
                   <p className="text-white text-xl">Koshi Province</p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="max-w-sm  cursor-pointer rounded overflow-hidden shadow-lg m-4">
             <div className="relative group">
-              <a href="/project-detail">
+              <Link to="/project-detail">
                 <img
                   className=" object-cover transition duration-500 transform group-hover:scale-125"
                   src={ilam}
@@ -77,12 +78,12 @@ const Project = () => {
                   <h1 className='text-white font-extrabold text-2xl'>Kailali</h1>
                   <p className="text-white text-xl">SUDURPASHCHIM PROVINCE</p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="max-w-sm  cursor-pointer rounded overflow-hidden shadow-lg m-4">
             <div className="relative group">
-              <a href="/project-detail">
+              <Link to="/project-detail">
                 <img
                   className=" object-cover transition duration-500 transform group-hover:scale-125"
                   src={morang}
@@ -93,12 +94,12 @@ const Project = () => {
                   <h1 className='text-white font-extrabold text-2xl'>Bajhang</h1>
                   <p className="text-white text-xl">SUDURPASHCHIM PROVINCE</p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="max-w-sm  cursor-pointer rounded overflow-hidden shadow-lg m-4">
             <div className="relative group">
-              <a href="/project-detail">
+              <Link to="/project-detail">
 
                 <img
                   className=" object-cover transition duration-500 transform group-hover:scale-125"
@@ -110,12 +111,12 @@ const Project = () => {
                   <h1 className='text-white font-extrabold text-2xl'>Baitadi</h1>
                   <p className="text-white text-xl">SUDURPASHCHIM PROVINCE</p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="max-w-sm  cursor-pointer rounded overflow-hidden shadow-lg m-4">
             <div className="relative group">
-              <a href="/project-detail">
+              <Link to="/project-detail">
                 <img
                   className=" object-cover transition duration-500 transform group-hover:scale-125"
                   src={morang}
@@ -126,12 +127,12 @@ const Project = () => {
                   <h1 className='text-white font-extrabold text-2xl'>Argakhachi</h1>
                   <p className="text-white text-xl">LUMBINI PROVINCE</p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="max-w-sm  cursor-pointer rounded overflow-hidden shadow-lg m-4">
             <div className="relative group">
-              <a href="/project-detail">
+              <Link to="/project-detail">
                 <img
                   className=" object-cover transition duration-500 transform group-hover:scale-125"
                   src={ilam}
@@ -142,7 +143,7 @@ const Project = () => {
                   <h1 className='text-white font-extrabold text-2xl'>Morang</h1>
                   <p className="text-white text-xl">KOSHI PROVINCE</p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

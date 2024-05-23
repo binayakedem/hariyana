@@ -5,6 +5,7 @@ import healthD from '../assets/HealthDepartment.jpg'
 import marketmanager from '../assets/MarketingManager.jpg'
 import manager1 from '../assets/Manager1.jpg'
 import manager2 from '../assets/Manager2.jpg'
+import { Link } from 'react-router-dom'
 const Team = () => {
   return (
     <>
@@ -17,7 +18,7 @@ const Team = () => {
         <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 p-4'>
           <div className="flex flex-col items-center  cursor-pointer">
             <div className='rounded-full overflow-hidden'>
-              <a href="/team-detail">
+              <Link to="/team-detail">
                 <div className="group relative">
                   <img
                     className="rounded-full w-[200px] h-[200px] object-cover mb-2 hover:scale-125 duration-500 ease-in-out"
@@ -28,14 +29,14 @@ const Team = () => {
                     Know More...
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
             <p className="text-gray-800 font-medium">Chair Person</p>
             <h1 className='text-black font-bold text-2xl'>Sharad Sighn Bhandari</h1>
           </div>
           <div className="flex flex-col items-center  cursor-pointer">
             <div className='rounded-full overflow-hidden'>
-              <a href="/team-detail">
+              <Link to="/team-detail">
                 <div className="group relative">
                   <img
                     className="rounded-full w-[200px] h-[200px] object-cover mb-2 hover:scale-125 duration-500 ease-in-out"
@@ -46,14 +47,14 @@ const Team = () => {
                     Know More...
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
             <p className="text-gray-800 font-medium">Program Manager</p>
             <h1 className='text-black font-bold text-2xl'>Gopal Bhandari</h1>
           </div>
           <div className="flex flex-col items-center  cursor-pointer">
             <div className='rounded-full overflow-hidden'>
-              <a href="/team-detail">
+              <Link to="/team-detail">
                 <div className="group relative">
                   <img
                     className="rounded-full w-[200px] h-[200px] object-cover mb-2 hover:scale-125 duration-500 ease-in-out"
@@ -64,14 +65,14 @@ const Team = () => {
                     Know More...
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
             <p className="text-gray-800 font-medium">Health Department Head</p>
             <h1 className='text-black font-bold text-2xl'>Lokendra B. Khadka</h1>
           </div>
           <div className="flex flex-col items-center  cursor-pointer">
             <div className='rounded-full overflow-hidden'>
-              <a href="/team-detail">
+              <Link to="/team-detail">
                 <div className="group relative">
                   <img
                     className="rounded-full w-[200px] h-[200px] object-cover mb-2 hover:scale-125 duration-500 ease-in-out"
@@ -82,14 +83,14 @@ const Team = () => {
                     Know More...
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
             <p className="text-gray-800 font-medium">Marketing Manager</p>
             <h1 className='text-black font-bold text-2xl'>Laxman Bhusal</h1>
           </div>
           <div className="flex flex-col items-center  cursor-pointer">
             <div className='rounded-full overflow-hidden'>
-              <a href="/team-detail">
+              <Link to="/team-detail">
                 <div className="group relative">
                   <img
                     className="rounded-full w-[200px] h-[200px] object-cover mb-2 hover:scale-125 duration-500 ease-in-out"
@@ -100,14 +101,14 @@ const Team = () => {
                     Know More...
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
             <p className="text-gray-800 font-medium">Manager</p>
             <h1 className='text-black font-bold text-2xl'>Hary Pandey</h1>
           </div>
           <div className="flex flex-col items-center  cursor-pointer">
             <div className='rounded-full overflow-hidden'>
-              <a href="/team-detail">
+              <Link to="/team-detail">
                 <div className="group relative">
                   <img
                     className="rounded-full w-[200px] h-[200px] object-cover mb-2 hover:scale-125 duration-500 ease-in-out"
@@ -118,7 +119,7 @@ const Team = () => {
                     Know More...
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
             <p className="text-gray-800 font-medium">Manager</p>
             <h1 className='text-black font-bold text-2xl'>Jagat Shah</h1>

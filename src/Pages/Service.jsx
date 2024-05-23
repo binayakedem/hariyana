@@ -3,6 +3,7 @@ import '../CSS/body.css'
 import wheat from '../assets/wheat.png'
 import medic from '../assets/medicinalherb.jpg'
 import { useSpring, animated } from 'react-spring';
+import { Link } from 'react-router-dom';
 const Service = () => {
   const [showCard, setShowCard] = useState(false);
   const slideInProps = useSpring({
@@ -54,7 +55,7 @@ const Service = () => {
       </div>
       <div className="px-6 py-4">
         <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full">
-           <a href="/service-detail">Learn More</a>
+           <Link to="/service-detail">Learn More</Link>
         </button>
       </div>
     </animated.div>
@@ -70,7 +71,7 @@ const Service = () => {
       </div>
       <div className="px-6 py-4">
         <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full">
-            <a href="/service-detail">Learn More</a>
+            <Link to="/service-detail">Learn More</Link>
         </button>
       </div>
     </animated.div>
@@ -86,7 +87,7 @@ const Service = () => {
       </div>
       <div className="px-6 py-4">
         <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full">
-           <a href="/service-detail">Learn More</a>
+           <Link to="/service-detail">Learn More</Link>
         </button>
       </div>
     </animated.div>
@@ -102,7 +103,7 @@ const Service = () => {
       </div>
       <div className="px-6 py-4">
         <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full">
-           <a href="/service-detail">Learn More</a>
+           <Link to="/service-detail">Learn More</Link>
         </button>
       </div>
     </animated.div>
