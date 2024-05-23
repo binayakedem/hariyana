@@ -22,17 +22,17 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contacts" element={<Contact />} />
-          <Route path="/projects" element={<Project />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/project" element={<Project />} />
           <Route path="/services" element={<Service />} />
-          <Route path="/service-details" element={<ServiceDetail />} />
-          <Route path="/projects" element={<Project />} />
-          <Route path="/project-details" element={<ProjectDetail />} />
-          <Route path="/teams" element={<Team />} />
-          <Route path="/team-details" element={<TeamDetail />} />
-          <Route path="/about-uss" element={<AboutUs />} />
+          <Route path="/service-detail" element={<ServiceDetail />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/project-detail" element={<ProjectDetail />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/team-detail" element={<TeamDetail />} />
+          <Route path="/about-us" element={<AboutUs />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blog-expandeds" element={<ExpandedBlog />} />
+          <Route path="/blog-expanded" element={<ExpandedBlog />} />
         </Routes>
         <Footer />
       </BrowserRouter>

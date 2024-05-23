@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import logo from '../assets/logo.png'
 import { MdOutlineClose } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [activeMe, setActiveMe] = useState(false)
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +36,7 @@ const Navbar = () => {
         </div>
         <ul className={` md:flex md:items-center md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100  ${activeMe ? 'top-[90px] ' : 'top-[-400px]'} transition-all ease-in duration-500`}>
           <li className="mx-4 my-6 md:my-0">
-            <a href="/" className="text-xl font-semibold hover:text-green-600 duration-500">HOME</a>
+            <Link to="/" className="text-xl font-semibold hover:text-green-600 duration-500">HOME</Link>
           </li>
           <li className="mx-4 my-6 md:my-0">
             <div className="relative h-6" onMouseEnter={handleMouseEnter} >
@@ -46,27 +47,27 @@ const Navbar = () => {
               </button>
               {isOpen && (
                 <div className="absolute z-10 right-0 mt-2 w-48 bg-white rounded-md shadow-lg" onMouseLeave={handleMouseLeave}>
-                  <a
-                    href="/about-us"
+                  <Link
+                    to="/about-us"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                   >
                     About Us
-                  </a>
-                  <a
-                    href="/team"
+                  </Link>
+                  <Link
+                    to="/team"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                   >
                     Our Team
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
           </li>
           <li className="mx-4 my-6 md:my-0">
-            <a href="/service" className="text-xl font-semibold hover:text-green-600 duration-500">SERVICES</a>
+            <Link to="/service" className="text-xl font-semibold hover:text-green-600 duration-500">SERVICES</Link>
           </li>
           <li className="mx-4 my-6 md:my-0">
-            <a href="/project" className="text-xl font-semibold hover:text-green-600 duration-500">PROJECT</a>
+            <Link to="/project" className="text-xl font-semibold hover:text-green-600 duration-500">PROJECT</Link>
           </li>
           <li className="mx-4 my-6 md:my-0">
             <div className="relative h-6" onMouseEnter={handleMouseEnters} >
@@ -77,24 +78,24 @@ const Navbar = () => {
               </button>
               {isOpens && (
                 <div className="absolute z-10 right-0 mt-2 w-48 bg-white rounded-md shadow-lg" onMouseLeave={handleMouseLeaves}>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                   >
                     Latest Blog
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
                   >
                     Gallary
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
           </li>
           <li className="mx-4 my-6 md:my-0">
-            <a href="/contact" className="text-xl font-semibold hover:text-green-600 duration-500">CONTACT</a>
+            <Link to="/contact" className="text-xl font-semibold hover:text-green-600 duration-500">CONTACT</Link>
           </li>
           <button className="bg-green-600 text-white font-[Poppins] duration-500 font-bold text-lg px-6 py-2 mx-4 hover:bg-green-500 rounded ">
             Take Action
