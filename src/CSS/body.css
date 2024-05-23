@@ -1,0 +1,48 @@
+.my-bg {
+  /* background-image: url('../assets/body.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover; */
+  background-image: url("../assets/body.jpg");
+  background-size: cover;
+  animation: changeBackground 90s infinite ease-in;
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url("../assets/body.jpg");
+  }
+
+  50% {
+    background-image: url("../assets/body1.jpg");
+  }
+
+  75% {
+    background-image: url('../assets/body3.jpg');
+  }
+
+  100% {
+    background-image: url("../assets/body2.jpg");
+  }
+}
+
+.shadow-right {
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
+  /* Shadow on the right side */
+}
+
+.footer-bg {
+  background-image: url("../assets/svg.png");
+  background-size: cover;
+  object-fit: cover;
+}
+
+.displayNone {
+  display: none;
+}
+
+.team-bg {
+  background-image: url("../assets/teamDetail.png");
+  background-size: cover;
+  object-fit: cover;
+}
